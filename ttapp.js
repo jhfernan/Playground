@@ -7,3 +7,7 @@ I'm sure that if I figure out one I'll figure out the rest.
 let navigationLinks;
 let galleryLinks;
 let footerImages;
+
+galleryLinks = document.getElementById('gallery');
+
+console.log(galleryLinks)
