@@ -10,4 +10,4 @@ let footerImages;
 
 galleryLinks = document.getElementById('gallery');
 
-console.log(galleryLinks)
+navigationLinks = document.getElementById('nav links');
