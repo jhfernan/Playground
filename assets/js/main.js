@@ -1,1 +1,1 @@
-alert("Hello World")
+// Our Javascript page
