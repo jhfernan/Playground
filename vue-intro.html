@@ -26,23 +26,26 @@
 			</div>
 		</nav>
 
-		<div class="container py-4">
-			<div class="jumbotron bg-primary text-white">
-				<h1 class="display-4">Hi, this is a page for Jon and Mike to have fun!</h1>
-				<p class="lead">Web Developers at large</p>
-				<hr class="my-4">
-				<p>Looking for someone to make your website?</p>
-				<a class="btn btn-success" href="tel:4074959514">Call Us!</a>
-			</div>
-		</div>
-
-		<div class="container py-3 bg-dark">
-			<div class="row">
-				<div class="col">
-					<p class="text-white mb-0">&copy; Jon and Mike</p>
+		<div id="app">
+			<div class="container py-4">
+				<div class="jumbotron bg-primary text-white">
+					<h1 class="display-4">Hi, this is a page for Jon and Mike to have fun!</h1>
+					<p class="lead">Web Developers at large</p>
+					<hr class="my-4">
+					<p>{{ message }}</p>
+					<input class="form-control mb-1" type="text" v-model="form.message" />
+					<p class="btn btn-success" @click="updateMessage">Change message</p>
 				</div>
-				<div class="col">
-					<p class="text-white mb-0 text-right">Website made by Jon and Mike</p>
+			</div>
+
+			<div class="container py-3 bg-dark">
+				<div class="row">
+					<div class="col">
+						<p class="text-white mb-0">&copy; Jon and Mike</p>
+					</div>
+					<div class="col">
+						<p class="text-white mb-0 text-right">{{ message }}</p>
+					</div>
 				</div>
 			</div>
 		</div>
